@@ -1,3 +1,9 @@
 SerenityOS
 ============
 
+Serenity OS is a hobbyist operating system project inspired by the educational
+material provided by the "Writing an OS in Rust" series by Philipp Oppermann
+(https://os.phil-opp.com/). It aims to provide a platform for learning about
+operating system development while also serving as a playground for
+experimenting with various OS concepts and design ideas.
+
