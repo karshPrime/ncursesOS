@@ -3,6 +3,8 @@
 #![no_std]
 #![no_main]
 
+mod vga_buffer;
+
 use core::panic::PanicInfo;
 
 #[panic_handler]
