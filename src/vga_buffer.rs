@@ -1,5 +1,8 @@
 // vga_buffer.rs
 
+const BUFFER_HEIGHT: usize = 25;
+const BUFFER_WIDTH: usize = 80;
+
 #[allow(dead_code)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 #[repr(u8)]
@@ -38,9 +41,6 @@ struct ScreenChar {
     ascii_char: u8,
     color_code: ColorCode,
 }
-
-const BUFFER_HEIGHT: usize = 25;
-const BUFFER_WIDTH: usize = 80;
 
 #[repr(transparent)]
 struct Buffer {
