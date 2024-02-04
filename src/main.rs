@@ -1,4 +1,4 @@
-// main.rs //
+// main.rs
 
 #![no_std]
 #![no_main]
@@ -14,7 +14,10 @@ fn panic(_info: &PanicInfo) -> ! {
 
 #[no_mangle]
 pub extern "C" fn _start() -> ! {
-    vga_buffer::test_print();
+    use core::fmt::Write;
+
+    vga_buffer::WRITER.lock().write_str("hello world!").unwrap();
+    write!(vga_buffer::WRITER.lock(), " some numbers: {} and {}", 21, 9.81).unwrap();
     
     loop {}
 }
