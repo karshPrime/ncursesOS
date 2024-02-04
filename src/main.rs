@@ -14,11 +14,7 @@ fn panic(_info: &PanicInfo) -> ! {
 
 #[no_mangle]
 pub extern "C" fn _start() -> ! {
-    use core::fmt::Write;
-
-    vga_buffer::WRITER.lock().write_str("hello world!").unwrap();
-    write!(vga_buffer::WRITER.lock(), " some numbers: {} and {}", 21, 9.81).unwrap();
-    
+    println!("hello world");
     loop {}
 }
 
