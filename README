@@ -1,9 +1,17 @@
-SerenityOS
+ncursesOS
 ============
 
-Serenity OS is a hobbyist operating system project inspired by the educational
-material provided by the "Writing an OS in Rust" series by Philipp Oppermann
-(https://os.phil-opp.com/). It aims to provide a platform for learning about
-operating system development while also serving as a playground for
-experimenting with various OS concepts and design ideas.
+Imagine an operating system that seamlessly blends modern functionalities with a
+nostalgic, traditional aesthetic. The ncursesOS project is designed to
+provide a minimalistic environment that prioritises text-based user interaction
+over graphical interfaces.
+
+ncursesOS is a Text User Interface (TUI)-centric operating system, prioritises
+efficiency and simplicity through its command-line interface (CLI). While the
+operating system itself is entirely CLI-based, it also offers the ability to
+display images, videos, and other graphical media, allowing users to interact
+with content without compromising on its minimalist design.
+
+THIS IS A HOBBY PROJECT! ncursesOS is not intended for bare-metal installation,
+except for those who wish to explore its inner workings.
 
